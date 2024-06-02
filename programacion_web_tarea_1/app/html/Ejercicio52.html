@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores De iframes</title>
+</head>
+<body>
+    <h1>simulador y iframes </h1>
+    <p>Ingresa dos URLs en la caja de texto continúa y presiona "ejecutar" para visualizar los inframes</p>
+
+    <form id="formulario">
+        <label for="url1">URL 1:</label>
+        <input type="text" id="url1" name="url1" size="50">
+        <br>
+    <label for="url2">URL 2:</label>
+    <input type="text" id="url2" name="url2" size="50">
+    <br>
+    <br>
+    <button type="button" onclick="ejecutar()">Ejecutar</button>
+    </form>
+    <hr>
+    <h2>Iframe 1</h2>
+    <iframe id="iframe1" width="300" height="300" scrolling="always"></iframe>
+    <h2>Iframe 2</h2>
+    <iframe id="iframe2" width="300" height="300" scrolling="always"></iframe>
+    
+    <script>
+    function ejecutar() {
+    const url1 = document.getElementById('url1').value;
+    const url2 = document.getElementById('url2').value;
+    
+    document.getElementById('iframe1').src = url1;
+    document.getElementById('iframe2').src = url2;
+    }
+    </script>
+
+</body>
+</html>

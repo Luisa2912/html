@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces a blogs</title>
+</head>
+<body>
+    <h1>Enlaces a blogs</h1>
+
+    <h2>Abrir en otra pestaña</h2>
+    <ul id="new-tab-links">
+        <li><a href="https://www.guayaquil.gob.ec/">Página oficial del Municipio de Guayaquil</a></li>
+        <li><a href="https://www.ups.edu.ec/">Universidad Politécnica Salesiana</a></li>
+        <li><a href="https://www.eluniverso.com/">Diario El Universo</a></li>
+    </ul>
+
+    <h2>Abrir en la misma página</h2>
+    <ul id="same-page-links">
+        <li><a href="https://www.guayaquil.gob.ec/">Página oficial del Municipio de Guayaquil</a></li>
+        <li><a href="https://www.ups.edu.ec/">Universidad Politécnica Salesiana</a></li>
+        <li><a href="https://www.eluniverso.com/">Diario El Universo</a></li>
+    </ul>
+    <script>
+        const newTabLinks = document.getElementById('new-tab-links').querySelectorAll('a');
+        const samePageLinks = document.getElementById('same-page-links').querySelectorAll('a');
+        newTabLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.open(link.href, '_blank');
+
+                window.open(link.href, '_blank'); // Open link in a new tab
+            });
+        });
+
+        samePageLinks.forEach(link => {
+        });
+    </script>
+</body>
+</html> 

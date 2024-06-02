@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta SO</title>
+</head>
+<body>
+    <h1>Encuesta:¿Que sistema operativo utiliza mas?</h1>
+    <form action="procesarVoto.php" method="post">
+        <p>Seleccione el sistema operativo que utiliza más frecuentemente:</p>
+        <input type="radio" id="linux" name="sistemaOperativo" value="linux" required>
+        <label for="linux">Linux</label><br>
+
+        <input type="radio" id="windows" name="sistemaOperativo" value="windows" required>
+    <label for="windows">Windows</label><br>
+
+    <button type="submit">Votar</button>
+</form>
+</body>
+</html>

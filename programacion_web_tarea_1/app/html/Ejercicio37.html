@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir dos archivos</title>
+</head>
+<body>
+    <h1>Subir dos archivos</h1>
+    <form action="procesarArchivos.php" method="post" enctype="multipart/form-data">
+        <label for="archivo1">Seleccionar archivo 1:</label>
+        <input type="file" id="archivo1" name="archivo1" required>
+        <br>
+        <label for="archivo2">Seleccionar archivo 2:</label>
+        <input type="file" id="archivo2" name="archivo2" required>
+        <br>
+
+        <button type="submit">Enviar archivos</button>
+    </form>
+    </body>
+</html>

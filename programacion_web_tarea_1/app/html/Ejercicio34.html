@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de paises por continente</title>
+</head>
+<body>
+    <h1>Seleccion de paises por continente</h1>
+    <form action="procesarPais.php" method="post"></form>
+    <label for="pais">Seleccionar país:</label>
+    <select id="pais" name="pais" required>
+        <optgroup label="América"></optgroup>
+        <option value="argentina">Argentina</option>
+        <option value="brasil">Brasil</option>
+        <option value="canada">Canadá</option>
+        <option value="chile">Chile</option>
+    </optgroup>
+    <optgroup>
+        <option value="alemania">Alemania</option>
+        <option value="espana">España</option>
+        <option value="francia">Francia</option>
+        <option value="italia">Italia</option>
+    </optgroup>
+    </select>
+    
+    <button type="submit">Enviar selección</button>
+    </form>
+    </body>
+</html>

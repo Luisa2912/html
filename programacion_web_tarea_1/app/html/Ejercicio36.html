@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta con opciones</title>
+</head>
+<body>
+    <h1>¿Cual es la capital de francia?</h1>
+    <form action="procesarRespuesta.php" method="post">
+        <p>Seleccione la respuesta correcta:</p>
+        <input type="radio" id="opcion1" name="respuesta" value="paris" required>
+        <label for="opcion1">París</label><br>
+
+        <input type="radio" id="opcion2" name="respuesta" value="marsella">
+        <label for="opcion2">Marsella</label><br>
+
+        <input type="radio" id="opcion3" name="respuesta" value="lyon">
+        <label for="opcion3">Lyon</label><br>
+
+        <button type="submit">Enviar respuesta</button>
+    </form>
+    </body>
+</html>

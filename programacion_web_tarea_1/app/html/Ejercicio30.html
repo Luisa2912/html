@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de peliculas</title>
+</head>
+<body>
+    <h1>Seleccion de peliculas</h1>
+    <form action="procesarSeleccion.php" method="post">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <h2>Películas:</h2>
+        <div class="peliculas">
+        <input type="checkbox" id="pelicula1" name="peliculas[]" value="pelicula1">
+        <label for="pelicula1">Película 1</label><br>
+
+        <input type="checkbox" id="pelicula2" name="peliculas[]" value="pelicula2">
+        <label for="pelicula2">Película 2</label><br>
+
+    </div>
+
+    <button type="submit">Enviar selección</button>
+    </form>
+    </body>
+</html>

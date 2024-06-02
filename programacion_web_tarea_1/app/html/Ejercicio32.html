@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votacion del sitio web</title>
+</head>
+<body>
+    <h1>Votacion del sitio web</h1>
+    <form action="procesarVoto2.php"></form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="voto">Calificación del sitio:</label>
+    <select id="voto" name="voto" required>
+        <option value="">Seleccione una calificación</option>
+        <option value="excelente">Excelente</option>
+        <option value="muy_bueno">Muy Bueno</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="malo">Malo</option>
+    </select>
+    
+    <button type="submit">Enviar voto</button>
+    </form>
+    </body>
+</html>
